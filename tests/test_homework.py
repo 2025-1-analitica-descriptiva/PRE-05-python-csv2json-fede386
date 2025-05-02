@@ -10,7 +10,7 @@ def test_01():
     assert os.path.exists("files/drivers.csv")
 
     # read the json file "drivers.json"
-    with open("files/drivers.json", "r", encoding="utf-8") as f:
+    with open("files/drivers.csv", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     assert len(data) == 34
